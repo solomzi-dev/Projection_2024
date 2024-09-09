@@ -15,4 +15,97 @@ body {
     --blue-ish: #656575;
     --green: #6cc091;
     --light-grey: rgba(255, 255, 255, 0.55);
+    --white: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.container {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: transparent;
+    padding: 1.1rem 4rem;
+    border: var(--green) solid 3px;
+    border-radius: 50px;
+    color: var(--green);
+    text-transform: uppercase;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.logo {
+    font-weight: 400;
+}
+
+/* Header Section */
+header {
+    background-color: var(--blue-ish);
+    color: var(--white);
+    height: 60vh;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid var(--light-grey);
+}
+
+header .main-nav {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    text-align: center;
+}
+
+header .hero {
+    font-size: 3.8rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+}
+
+header .header-boxes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+header .box {
+    padding: 0 7rem;
+}
+
+.box.middle {
+    border-left: 1px solid var(--light-grey);
+    border-right: 1px solid var(--light-grey);
+}
+
+header .box i {
+    font-size: 2.8rem;
+    color: var(--green);
+}
+
+header .box h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+header .box p {
+    color: var(--light-grey);
 }
