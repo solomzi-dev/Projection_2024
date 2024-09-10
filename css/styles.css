@@ -16,7 +16,8 @@ body {
     --green: #6cc091;
     --light-grey: rgba(255, 255, 255, 0.55);
     --white: #fff;
-    --btn-hover: rgba(108, 192, 145, .1);;
+    --btn-hover: rgba(108, 192, 145, .1);
+    --muted: #9a9a9a;;
 }
 
 a {
@@ -32,7 +33,7 @@ a {
 
 .btn {
     background-color: transparent;
-    padding: 1.1rem 4rem;
+    padding: 1rem 3rem;
     border: var(--green) solid 3px;
     border-radius: 50px;
     color: var(--green);
@@ -114,4 +115,43 @@ header .box h3 {
 
 header .box p {
     color: var(--light-grey);
+}
+
+/* Showcase Section */
+.showcase {
+    margin: 5rem 0;
+}
+
+.showcase-boxes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.showcase-boxes .showcase-box {
+    width: 400px;
+}
+
+.showcase .img-box  img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.showcase-header {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: var(--blue-ish);
+    margin-bottom: 1.4rem;
+}
+
+.showcase-text {
+    line-height: 1.6;
+    color: var(--muted);
+    margin-bottom: 2rem;
+}
+
+.showcase-box .btn {
+
 }
