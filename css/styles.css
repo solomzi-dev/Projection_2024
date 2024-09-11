@@ -212,3 +212,7 @@ header .box p {
     letter-spacing: .3rem;
     font-size: .7rem;
 }
+
+::placeholder {
+    color: var(--light-grey);
+  }
