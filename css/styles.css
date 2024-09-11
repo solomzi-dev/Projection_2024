@@ -17,7 +17,8 @@ body {
     --light-grey: rgba(255, 255, 255, 0.55);
     --white: #fff;
     --btn-hover: rgba(108, 192, 145, .1);
-    --muted: #9a9a9a;;
+    --muted: #9a9a9a;
+    ;
 }
 
 a {
@@ -27,8 +28,9 @@ a {
 }
 
 .container {
-    width: 1230px;
+    max-width: 1230px;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .btn {
@@ -51,6 +53,11 @@ a {
 }
 
 /* Header Section */
+
+i.fa-bars {
+    display: none;
+}
+
 header {
     background-color: var(--blue-ish);
     color: var(--white);
@@ -133,7 +140,7 @@ header .box p {
     width: 400px;
 }
 
-.showcase .img-box  img {
+.showcase .img-box img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -168,7 +175,7 @@ header .box p {
 
 .contact .form-grid {
     display: grid;
-    grid-template-columns: repeat(2, 450px);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 3fr;
     gap: 2rem;
     width: 80%;
@@ -180,7 +187,8 @@ header .box p {
     margin-bottom: 3rem;
 }
 
-.contact form input, .contact form textarea {
+.contact form input,
+.contact form textarea {
     margin-top: 1rem;
     display: block;
     width: 100%;
@@ -215,4 +223,44 @@ header .box p {
 
 ::placeholder {
     color: var(--light-grey);
-  }
+}
+
+/* Media Queries */
+@media (max-width: 990px) {
+    header .box {
+        padding: 0 3rem;
+    }
+
+    .showcase-boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 720px) {
+    header .box {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 572px) {
+    header .header-boxes {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    header .header-content {
+        height: fit-content;
+    }
+
+    header .main-nav {
+        flex-direction: column;
+        height: 100dvh;
+        position: absolute;
+        width: 300px;
+        background-color: var(--green);
+        top: 0;
+        left: -332px;
+    }
+}
