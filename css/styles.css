@@ -152,6 +152,63 @@ header .box p {
     margin-bottom: 2rem;
 }
 
-.showcase-box .btn {
+/* Contact Section */
+.contact {
+    background-color: var(--green);
+    color: var(--white);
+    padding-top: 4rem;
+}
 
+.contact .contact-header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.contact .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    grid-template-rows: 1fr 3fr;
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-group-3 {
+    grid-column: span 2;
+    margin-bottom: 3rem;
+}
+
+.contact form input, .contact form textarea {
+    margin-top: 1rem;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--light-grey);
+    border-radius: 7px;
+}
+
+.contact form textarea {
+    height: 100%;
+}
+
+.contact form button.btn {
+    border: var(--light-grey) solid 1px;
+    color: var(--light-grey);
+    display: block;
+    width: fit-content;
+    margin: 3rem auto;
+}
+
+.contact p {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.contact p small span {
+    color: var(--blue-ish);
+    letter-spacing: .3rem;
+    font-size: .7rem;
 }
