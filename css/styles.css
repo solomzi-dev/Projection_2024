@@ -141,7 +141,7 @@ header .box p {
 }
 
 .showcase-boxes .showcase-box {
-    width: 400px;
+    max-width: 400px;
 }
 
 .showcase .img-box img {
