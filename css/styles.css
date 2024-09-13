@@ -59,7 +59,7 @@ i.fa-bars, .fa-x {
 }
 
 .sidebar.active {
-    right: 0;
+    left: 0;
 }
 
 header {
@@ -269,11 +269,12 @@ header .box p {
         width: 300px;
         background-color: var(--green);
         top: 0;
-        right: -332px;
+        left: -300px;
         padding: 2rem;
+        transition: .5s;
     }
 
     nav {
-        /* flex-direction: row-reverse; */
+        flex-direction: row-reverse;
     }
 }
