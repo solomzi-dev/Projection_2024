@@ -180,14 +180,15 @@ header .box p {
 .contact .form-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 3fr;
-    gap: 2rem;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
     width: 80%;
     margin: 0 auto;
 }
 
 .form-group-3 {
     grid-column: span 2;
+    grid-row: span 2;
     margin-bottom: 3rem;
 }
 
@@ -276,5 +277,18 @@ header .box p {
 
     nav {
         flex-direction: row-reverse;
+    }
+
+    .form-group-1, .form-group-2 {
+        grid-column: span 2;
+    }
+
+    .form-group-3 {
+        grid-row: span 1;
+        margin-bottom: 0;
+    }
+
+    .contact form button.btn {
+        margin-top: 6rem;
     }
 }
