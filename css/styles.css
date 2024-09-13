@@ -54,8 +54,12 @@ a {
 
 /* Header Section */
 
-i.fa-bars {
+i.fa-bars, .fa-x {
     display: none;
+}
+
+.sidebar.active {
+    right: 0;
 }
 
 header {
@@ -245,6 +249,10 @@ header .box p {
 }
 
 @media (max-width: 572px) {
+    i.fa-bars, .fa-x {
+        display: block;
+    }
+
     header .header-boxes {
         flex-direction: column;
         gap: 3rem;
@@ -261,6 +269,11 @@ header .box p {
         width: 300px;
         background-color: var(--green);
         top: 0;
-        left: -332px;
+        right: -332px;
+        padding: 2rem;
+    }
+
+    nav {
+        /* flex-direction: row-reverse; */
     }
 }
